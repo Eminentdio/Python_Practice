@@ -1,0 +1,21 @@
+class StudentScore:
+    def eng_score(self):
+        x = int(input('Enter your test score: '))
+        y = int(input('Enter your exam score: '))
+
+        total = x + y
+        print('Your total score in English Studies is ' + str(total))
+
+    def math_score(self):
+        x = int(input('Enter your test score: '))
+        y = int(input('Enter your exam score: '))
+
+        total = x + y
+        print('Your total score in Mathematics is ' + str(total))
+
+
+
+Exam = StudentScore()
+Exam.eng_score()
+
+Exam.math_score()
