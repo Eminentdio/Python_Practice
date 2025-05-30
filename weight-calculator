@@ -1,0 +1,40 @@
+def weight_converter():
+    print('Weight Converter')
+    print('1: Grams > Kilograms')
+    print('2: Kilograms > Grams')
+    print('3: Pounds > Kilograms')
+    print('4: Kilograms > Pounds')
+    print('5: Ounce > Kilograms')
+    print('6: Kilograms > Ounce')
+
+    choice = input('Enter your choice (1-6): ')
+
+    if choice == '1':
+        grams = float(input("Enter weight in grams: "))
+        kilo = grams/1000
+        print(f"{grams}g is equal to {kilo}kg")
+    elif choice == '2':
+        kilo = float(input("Enter weight in kilograms: "))
+        grams = kilo * 1000
+        print(f"{kilo}kg is equal to {grams}g")
+    elif choice == '3':
+        pounds = float(input("Enter weight in pounds: "))
+        kilo = pounds * 0.45
+        print(f"{pounds}lbs is equal to {kilo}kg")
+    elif choice == '4':
+        kilo = float(input("Enter weight in kilograms: "))
+        pounds = kilo / 0.45
+        print(f"{kilo}kg is equal to {pounds}lbs")
+    elif choice == '5':
+        ounces = float(input("Enter weight in ounces: "))
+        kilo = ounces * 0.28
+        print(f"{ounces}ounces is equal to {kilo}kg")
+    elif choice == '6':
+        kilo = float(input("Enter weight in kilograms: "))
+        ounces = kilo / 0.28
+        print(f"{kilo}kg is equal to {ounces}ounces")
+
+    else:
+        print("Invalid choice")
+
+weight_converter()
