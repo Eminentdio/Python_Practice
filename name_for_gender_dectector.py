@@ -3,7 +3,7 @@
 # Create a variable to collect the user's name
 # Check for the gender of the user with name entered
 # Print the result for the user to see
-# If the user's name is gender, prompt a variable that asks for his gender
+# If the user's name is genderless, prompt a variable that asks for his gender
 # Print that the user's gender has been saved for future usage
 
 gendered_names = {
@@ -30,7 +30,6 @@ def gender_detector():
     user_name = input("Enter your name: ")
 
     for key, value in gendered_names.items():
-
         if user_name == key:
             print(f"Welcome, {user_name}! You are a {value} 😘💕💖😜😍")
 
